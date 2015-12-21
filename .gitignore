@@ -8,9 +8,12 @@ capybara-*.html
 /public/system
 /coverage/
 /spec/tmp
+vendor/redis
+vendor/postgresql
 **.orig
 rerun.txt
 pickle-email-*.html
+.DS_STORE
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb

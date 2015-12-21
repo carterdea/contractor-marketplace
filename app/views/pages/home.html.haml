@@ -1,0 +1,10 @@
+- provide(:before_container) do
+  .jumbotron.jumbotron-fluid
+    .container
+      %h1.display-4 Find contractors for your kitchen, bath, or living room remodel
+      %p.lead Find great contractors, see transparent pricing, and get bids in 24 hours
+      %p What do you want to remodel?
+      .btn-group.btn-group-lg{ role: 'group' }
+        = link_to 'Kitchen', '#', class: 'btn btn-primary-outline btn-lg'
+        = link_to 'Bathroom', '#', class: 'btn btn-primary-outline btn-lg'
+        = link_to 'Living Room', '#', class: 'btn btn-primary-outline btn-lg'

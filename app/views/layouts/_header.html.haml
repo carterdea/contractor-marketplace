@@ -1,0 +1,17 @@
+.navbar.navbar-dark.bg-inverse.navbar-full
+  .container
+    = link_to('Contactor Marketplace', root_path, class: 'navbar-brand')
+    .clearfix.hidden-sm-up
+      =link_to('Menu','#', class: 'hidden-sm-up btn btn-secondary-outline pull-xs-right', type: 'button', 'data-toggle' => 'collapse', 'data-target' => "#nav-bar-container")
+    #nav-bar-container.navbar-toggleable-xs.collapse.pull-sm-right
+      %nav.nav.navbar-nav
+        = link_to('Home', root_path, class: 'nav-link nav-item')
+        - if current_user
+          - if current_user.contractor == nil
+            = link_to('Create a Contractor Profile', new_contractor_path, class: 'nav-link nav-item')
+          - else
+            = link_to('Edit my Contractor Profile', edit_contractor_path(current_user.contractor), class: 'nav-link nav-item')
+          = link_to('Log Out', logout_path, method: :post, class: 'nav-link nav-item')
+        - else
+          = link_to('Login', login_path, class: 'nav-link nav-item')
+          = link_to('Sign Up', signup_path, class: 'nav-link nav-item')

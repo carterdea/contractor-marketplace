@@ -1,2 +1,1 @@
-web: bundle exec puma -C config/puma.rb
-postgres: postgres -D vendor/postgresql
+web: bundle exec puma -p $PORT -C ./config/puma.rb

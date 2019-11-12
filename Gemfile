@@ -18,7 +18,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # file handling
 gem 'carrierwave', '~> 0.10.0'
-gem 'mini_magick', '~> 4.3.6'
+gem 'mini_magick', '~> 4.9.4'
 
 # security & auth
 gem 'bcrypt', '~> 3.1.7'

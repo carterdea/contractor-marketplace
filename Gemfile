@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.5'
 
 # front-end
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap', '~> 4.3.1'
 gem 'bower'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'haml', '~> 5.0.0'

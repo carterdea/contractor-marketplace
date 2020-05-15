@@ -22,7 +22,7 @@ gem 'mini_magick', '~> 4.9.4'
 
 # security & auth
 gem 'bcrypt', '~> 3.1.7'
-gem 'sorcery', '~> 0.9.1'
+gem 'sorcery', '~> 0.15.0'
 
 # search
 

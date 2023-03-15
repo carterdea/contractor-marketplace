@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.5'
+gem 'rails', '6.1.7.3'
 
 # front-end
 gem 'bootstrap', '~> 4.3.1'
 gem 'bower'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'haml', '~> 5.0.0'
-gem 'jquery-rails', '~> 4.0.5'
+gem 'jquery-rails', '~> 4.1.1'
 gem 'jquery-turbolinks', '~> 2.1.0'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # file handling
@@ -38,16 +38,16 @@ gem 'puma'
 
 group :development do
   gem 'better_errors'
-  gem 'bullet', '~> 4.14.7'
+  gem 'bullet', '~> 4.14.10'
   gem 'rails-footnotes', '~> 4.1.7'
   gem 'rails_best_practices'
 end
 
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.3.1'
+  gem 'rspec-rails', '~> 3.5.0'
   gem 'spring', '~> 1.3.6'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.2', '>= 2.2.1'
   gem 'ffaker', '~> 2.1.0'
 end
 
